@@ -19,9 +19,9 @@ android {
 	defaultConfig {
 		minSdk = 24
 		targetSdk = 37
-		versionCode = 57
-		versionName = "1.0.57"
-		applicationId = "ws.xsoh.etar"
+		versionCode = 5702
+		versionName = "1.0.57-reminderfix.2"
+		applicationId = "ws.xsoh.etar.reminderfix"
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 	}
 
@@ -127,6 +127,8 @@ dependencies {
     implementation(libs.androidx.concurrent.futures)
     testImplementation(libs.junit)
 	testImplementation(libs.androidx.test.runner)
+	androidTestImplementation(libs.junit)
+	androidTestImplementation(libs.androidx.test.runner)
 
 	coreLibraryDesugaring(libs.android.tools.desugar)
 
